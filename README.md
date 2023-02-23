@@ -1,6 +1,6 @@
 # Wallbreak
 
-This app demonstrates two high severity permanent denial-of-service vulnerabilities in Android's `WallpaperManagerService`: [CVE-2021-39670](https://www.cve.org/CVERecord?id=CVE-2021-39670) and [CVE-2021-39690](https://www.cve.org/CVERecord?id=CVE-2021-39690).
+This app demonstrates two high severity permanent denial-of-service vulnerabilities in Android's `WallpaperManagerService` that I discovered: [CVE-2021-39670](https://www.cve.org/CVERecord?id=CVE-2021-39670) and [CVE-2021-39690](https://www.cve.org/CVERecord?id=CVE-2021-39690).
 After running either exploit, the device will keep repeatedly crashing and rebooting. 
 
 Blog post coming soon! :)
@@ -20,5 +20,5 @@ Blog post coming soon! :)
 - Initial patch released in [March 2022 Android Security Bulletin](https://source.android.com/docs/security/bulletin/2022-03-01).
 - Was [initially patched by](https://android.googlesource.com/platform/frameworks/native/+/2914a57d755051a3e5f05154d784a08019500946) adding stricter input validation in `SurfaceFlinger`, and then [fully mitigated by](https://android.googlesource.com/platform/frameworks/base/+/f6b503a8c18a6b9179ff8d416544a6651facd805) adding a padding limit in `WallpaperManager`.
 
-As far as I'm aware devices bricked due to these vulnerabilities can't be fixed excpet through factory reset. Please run this app at your own risk.
+As far as I'm aware devices bricked due to these vulnerabilities *can't be fixed except through factory reset*. Please run this app at your own risk.
 Note that this project is provided for educational purposes only; please don't use it for malicious activities.
