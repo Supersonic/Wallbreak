@@ -3,7 +3,7 @@
 This app demonstrates two high severity permanent denial-of-service vulnerabilities in Android's `WallpaperManagerService` that I discovered: [CVE-2021-39670](https://www.cve.org/CVERecord?id=CVE-2021-39670) and [CVE-2021-39690](https://www.cve.org/CVERecord?id=CVE-2021-39690).
 After running either exploit, the device will keep repeatedly crashing and rebooting. 
 
-Blog post coming soon! :)
+Write-up coming soon! :)
 
 ## CVE-2021-39670 "Stream Exploit"
 
